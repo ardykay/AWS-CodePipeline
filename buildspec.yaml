@@ -1,0 +1,29 @@
+version:  0.2
+
+run-as:  user-name
+
+env:
+  variables:
+    key:  value
+  parameter-store:
+    key:  value
+
+phases:
+  install:
+    commands:
+      - command1
+      - command2
+    finally:
+      - command1
+  pre-build:
+    commands:
+      - command1
+  build:
+    commands:
+      - command1    
+  post-build:
+    commands:
+      - command1  
+  artifacts:
+    files:
+      - location            
